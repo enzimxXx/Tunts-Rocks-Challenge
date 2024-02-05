@@ -36,10 +36,7 @@ Antes de executar a aplicação, certifique-se de ter o seguinte:
     ```bash
     pip install -r requirements.txt
     ```
-
-4. Coloque o seu arquivo de credenciais da API do Google Sheets (`credentials.json`) no diretório do projeto.
-
-5. Execute o script:
+4. Execute o script:
 
     ```bash
     python app.py

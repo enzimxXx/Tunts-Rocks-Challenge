@@ -58,11 +58,11 @@ def main():
             
             # Update column H with the calculated final approval grade if in 'Exame Final' situation
             if situation == "Exame Final":
-                naf = max(0, 70 - average)  # Calcula a nota necessária para atingir pelo menos 7 na média final
+                naf = max(0, 70 - average)  # Calculates the grade needed to reach at least 7 in the final average
                 final_approval_grade = average + naf
                 sheet.update_cell(index + i, 8, math.ceil(naf))
                 
-                # Adicionar linha de log
+                # Add log line
                 print(f"Student {index + i - 3}: Situation updated to '{situation}', Final Approval Grade: {math.ceil(naf)}")
             else:
                 sheet.update_cell(index + i, 8, 0)
